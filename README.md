@@ -68,7 +68,7 @@ The physical layout prioritized functionality, visibility of components, availab
 
 ### Circuit
 
-![Arduino, ultrasonic sensor, TIP120 transistor, and pump circuit](assets/arduino-pump-sensor-circuit.png)
+![Arduino, ultrasonic sensor, TIP120 transistor, and pump circuit](Automated-resevoir-System/arduino-pump-sensor-circuit.png)
 
 *Circuit arrangement reproduced from the project report. Refer to the original component datasheets and circuit drawing before rebuilding; this image is documentation, not a wiring safety approval.*
 
