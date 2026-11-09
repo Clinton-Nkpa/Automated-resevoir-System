@@ -116,7 +116,7 @@ where \(K_p\) is proportional gain and \(u_0\) is the controller output at zero 
 
 A larger proportional gain increases the response to a given error. Excessive gain can cause overshoot or instability, while sensor noise and finite measurement resolution can limit useful gain.
 
-![Proportional controller gain-tuning flowchart](Automated-resevoir-System/proportional-gain-tuning-flowchart.png)
+![Proportional controller gain-tuning flowchart](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/proportional-gain-tuning-flowchart.png)
 
 ### PI and PID control
 
@@ -150,11 +150,11 @@ The report reviews two classical Ziegler–Nichols approaches:
 
 These methods are included as background research. They were not the tuning procedure used for the final physical system.
 
-![Ziegler–Nichols open-loop reaction curve](Automated-resevoir-System/ziegler-nichols-step-response.png)
+![Ziegler–Nichols open-loop reaction curve](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/ziegler-nichols-step-response.png)
 
-![Ziegler–Nichols reaction-curve tuning table](Automated-resevoir-System/ziegler-nichols-reaction-curve-table.png)
+![Ziegler–Nichols reaction-curve tuning table](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/ziegler-nichols-reaction-curve-table.png)
 
-![Ziegler–Nichols stability-limit tuning table](Automated-resevoir-System/ziegler-nichols-stability-limit-table.png)
+![Ziegler–Nichols stability-limit tuning table](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/ziegler-nichols-stability-limit-table.png)
 
 ## Mathematical model of the tank
 
@@ -207,15 +207,15 @@ Therefore, the first-order plant transfer function is:
 
 This is the first-order model used in the report's theoretical Simulink representation. It is the report's linearized/assumed outflow model; it should not be interpreted as a universal model for every tank outlet geometry.
 
-![Single-tank physical model showing inflow, water height, tank area, valve, and outflow](Automated-resevoir-System/single-tank-physical-model.png)
+![Single-tank physical model showing inflow, water height, tank area, valve, and outflow](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/single-tank-physical-model.png)
 
 ### Theoretical control-loop model
 
-![Theoretical Simulink feedback model with controller and first-order tank plant](Automated-resevoir-System/theoretical-simulink-control-loop.png)
+![Theoretical Simulink feedback model with controller and first-order tank plant](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/theoretical-simulink-control-loop.png)
 
 The theoretical plant's step response is shown below.
 
-![Theoretical first-order step response](Automated-resevoir-System/theoretical-first-order-step-response.png)
+![Theoretical first-order step response](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/theoretical-first-order-step-response.png)
 
 ## MATLAB and Simulink implementation
 
@@ -229,7 +229,7 @@ The project used MATLAB/Simulink to model the control loop and interface with th
 - Output to the Arduino analogue-write/PWM interface.
 - Scopes and workspace outputs for monitoring height, error, and motor command.
 
-![Practical MATLAB/Simulink model](Automated-resevoir-System/practical-matlab-simulink-model.png)
+![Practical MATLAB/Simulink model](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/practical-matlab-simulink-model.png)
 
 The source report describes a real-time pacing setting with a speed-up factor of 1 in the practical model.
 
@@ -268,25 +268,25 @@ The target water height was set to **10 cm**. The P, I, and D parameters were th
 
 The P-only configuration used the gains shown in the chart title: \(P=25,\ I=0,\ D=0\). The measured level rises quickly but remains below the 10 cm set point, leaving a steady-state error. The corresponding error plot shows the residual offset.
 
-![P-only water-height response](Automated-resevoir-System/proportional-height-response.png)
+![P-only water-height response](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/proportional-height-response.png)
 
-![P-only error response](Automated-resevoir-System/proportional-error-response.png)
+![P-only error response](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/proportional-error-response.png)
 
 ### Proportional–integral response
 
 After integral action was introduced, the report states that the system reached the desired outcome without overshoot or steady-state error. It reports that the response settled at approximately **15 seconds**.
 
-![PI water-height response](Automated-resevoir-System/pi-height-response.png)
+![PI water-height response](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/pi-height-response.png)
 
-![PI error response](Automated-resevoir-System/pi-error-response.png)
+![PI error response](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/pi-error-response.png)
 
 ### PID response
 
 After derivative action was added, the report states that the system reached steady state at approximately **12 seconds**, with no overshoot and no steady-state error.
 
-![PID water-height response](Automated-resevoir-System/pid-height-response.png)
+![PID water-height response](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/pid-height-response.png)
 
-![PID error response](Automated-resevoir-System/pid-error-response.png)
+![PID error response](https://github.com/Clinton-Nkpa/Automated-resevoir-System/blob/main/pid-error-response.png)
 
 ### Results summary
 
