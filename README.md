@@ -90,7 +90,7 @@ V_{\mathrm{avg}} = \frac{D}{100}V_H
 
 For example, a 50% duty cycle with a 5 V logic signal has an ideal average voltage of 2.5 V. This is an average representation; PWM is still a switched digital waveform, not a true analogue output.
 
-![PWM waveforms at 25%, 50%, and 75% duty cycle](Automated-resevoir-System/pwm-duty-cycle.png)
+![PWM waveforms at 25%, 50%, and 75% duty cycle](Automated-resevoir-System/blob/main/pwm-duty-cycle.png)
 
 ### Feedback and proportional control
 
