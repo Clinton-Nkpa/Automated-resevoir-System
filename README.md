@@ -62,7 +62,7 @@ The pump was driven from an external supply because the Arduino could not provid
 
 The physical layout prioritized functionality, visibility of components, available equipment, and build time. The water inlet was placed at the base of the tank to reduce interference with ultrasonic measurements caused by incoming water. A 3D-printed housing was made for the sensor, and a 3D-printed bracket was used to mount the tank.
 
-![Physical prototype showing tank, reservoir, pump, valve, Arduino, and PWM circuit] `physical-prototype-build.jpg`
+![Physical prototype showing tank, reservoir, pump, valve, Arduino, and PWM circuit] (physical-prototype-build.jpg)
 
 *Physical prototype. The original report labels the tank, flow inlet, fixed outflow valve, brushed DC pump, NPN transistor, Arduino Uno, PWM circuit, and reservoir.*
 
